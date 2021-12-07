@@ -6,6 +6,18 @@ import { FORMULARIO_PROYECTO } from '../../types';
 
 const ProyectoState = (props) => {
   const initialState = {
+    proyectos: [
+      { nombre: 'Aplicación de Intranet' },
+      { nombre: 'Aplicación de Tienda Virtual' },
+      { nombre: 'Aplicación Escritorio' },
+      { nombre: 'Aplicación Móvil' },
+      { nombre: 'Aplicación Web' },
+      { nombre: 'Diseño de Sitio Web' },
+      { nombre: 'Intranet' },
+      { nombre: 'Landing Page' },
+      { nombre: 'Página Web' },
+      { nombre: 'Tienda Virtual' },
+    ],
     formulario: false,
   };
 
@@ -22,6 +34,7 @@ const ProyectoState = (props) => {
   return (
     <proyectoContext.Provider
       value={{
+        proyectos: state.proyectos,
         formulario: state.formulario,
         mostrarFormulario,
       }}
